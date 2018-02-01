@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mtalh.hijinnks.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/header_background"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="30dp"
+                android:weightSum="1.5">
+
+
+                <ImageView
+                    android:id="@+id/drawer_image"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.25"
+                    android:padding="9dp"
+                    android:src="@drawable/ic_menu_icon" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/hijinnks_logo_text" />
+
+
+                <ImageView
+                    android:id="@+id/comment_button"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.25"
+                    android:padding="13dp"
+                    android:src="@drawable/message_icon_white" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="-3dp"
+            android:background="#bfbfbf"></LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_home_fragment"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header_layout"
+            />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-3dp"
+            android:background="#d66044"></LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.mtalh.hijinnks.addEvent_Location_Fragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fragment_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_1"
+                android:background="#ccc"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_2"
+                android:background="#000"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_3"
+                android:background="#ccc">
+
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

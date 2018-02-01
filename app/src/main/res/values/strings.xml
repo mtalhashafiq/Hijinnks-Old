@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Hijinnks</string>
+    <string name="hijinnks_app">Hijinnks App</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="or_connect_with">or connect with</string>
+    <string name="registration">Registration</string>
+    <string name="agree_registration"><![CDATA[By clicking <<Registration>> you agree to our]]></string>
+    <string name="dimmytext">Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer.</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="invites">INVITES</string>
+    <string name="dimmytext2">Curabitur adipiscing luctus massa. Integer ut <font color="#FF4081"><b>fffffff</b></font>purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer.</string>
+    <string name="facebook_app_id">175018949760333</string>
+    <string name="facebook_app_id2">308426826310899</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">lbpkP9ywEfoR8x5dK5wMEHp81</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">	YRkd0p00PpNaKx2gNNgPlXgXCMShoVGqiwjkVZ5irfTgBsTgOH</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+</resources>

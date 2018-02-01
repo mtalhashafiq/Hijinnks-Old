@@ -1,0 +1,291 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.mtalh.hijinnks.Edit_ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.96"
+            android:orientation="vertical"
+            android:weightSum="2.32">
+
+            <LinearLayout
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="25dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.30">
+
+                    <ImageView
+                        android:id="@+id/back_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_left_icon_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="75dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:text="Edit Profile"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+
+                    android:paddingLeft="10dp">
+
+                    <Button
+                        android:id="@+id/save_edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/background_save_button"
+                       android:gravity="center"
+                        android:text="Save"
+
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/cover_photo_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/i"
+                            android:scaleType="fitCenter" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="30dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/cover_photo_edit_profile"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_camera_full"
+                                app:civ_border_color="#fff"
+                                app:civ_border_width="0dp" />
+
+                            <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_camera_default"
+                                app:civ_border_width="0dp" />-->
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="78dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/profile_icon"
+                            app:civ_border_color="#fff"
+                            app:civ_border_width="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="75dp"
+                            android:layout_marginTop="80dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_change_buutton"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_camera_full"
+                                app:civ_border_color="#fff"
+                                app:civ_border_width="2dp" />
+                            <!--
+                                                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                            android:id="@+id/profile_imageee"
+                                                            android:layout_width="20dp"
+                                                            android:layout_height="20dp"
+                                                            android:layout_centerInParent="true"
+                                                            android:src="@drawable/ic_camera_full"
+                                                            app:civ_border_color="#FF000000"
+                                                            app:civ_border_width="0dp" />-->
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.04"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <com.example.mtalh.hijinnks.Custome_EditText_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_border_text_edit_2"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/ic_person_icon"
+                        android:drawablePadding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:editable="false"
+                        android:paddingLeft="8dp"
+                        android:text="Abubakar Butt"
+                        android:textSize="14sp" />
+
+
+                    <com.example.mtalh.hijinnks.Custome_EditText_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_border_text_edit_2"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/ic_location_icon"
+                        android:drawablePadding="14dp"
+                        android:editable="false"
+                        android:paddingLeft="8dp"
+                        android:text="Dickinson, Tx"
+                        android:textSize="14sp" />
+
+                    <com.example.mtalh.hijinnks.Custome_EditText_Varela_Regular
+                        android:id="@+id/email_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_border_text_edit_2"
+                        android:clickable="false"
+                        android:drawablePadding="8dp"
+                        android:editable="false"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:text="abubakar@codingpixel.com"
+                        android:textSize="14sp" />
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_border_text_edit_2"
+                        android:editable="false"
+                        android:maxLines="3"
+                        android:padding="10dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/dimmytext"
+                        android:textColor="#b2b2b2"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Oswald_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/background_border_text_editprofile"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:text="ADVANCED SETTINGS"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:id="@+id/more_option_edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableRight="@drawable/ic_arrow_right_large"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="More Options"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

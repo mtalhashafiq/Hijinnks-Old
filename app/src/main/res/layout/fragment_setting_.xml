@@ -1,0 +1,307 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_fragment_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.mtalh.hijinnks.Setting_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/back_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_left_icon_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.75">
+
+                <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="Options"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="35dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_weight="0.25"
+                 android:src="@drawable/ic_menu_icon_black"
+                 android:text="Save"
+                 android:textColor="@color/white" />-->
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/settings_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/account_heading_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Oswald_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_border_text_editprofile"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:text="ACCOUNT "
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!--
+                                    <TextView
+                                        android:id="@+id/edit_profile_button"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/search_bottom_border"
+                                        android:drawableRight="@drawable/ic_arrow_right_large"
+                                        android:gravity="center|left"
+                                        android:paddingLeft="20dp"
+                                        android:paddingRight="20dp"
+                                        android:text="Edit Profile"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />-->
+                <LinearLayout
+                    android:id="@+id/change_password_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/search_bottom_border"
+                        android:drawableRight="@drawable/ic_arrow_right_large"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Change Password"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/private_account_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Private Account"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <Switch
+                        android:id="@+id/simpleSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="23dp"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settings_heading_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Oswald_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_border_text_editprofile"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:text="SETTINGS "
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/liked_events_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1">
+                <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search_bottom_border"
+                    android:drawableRight="@drawable/ic_arrow_right_large"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Liked Events"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/push_notification_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_bottom_border"
+
+                    android:orientation="horizontal">
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <Switch
+                        android:id="@+id/simpleSwitch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="23dp"
+                        android:checked="true" />
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/intrests_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1">
+                <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/ic_arrow_right_large"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Interests"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/connect_account_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1">
+                <com.example.mtalh.hijinnks.Custome_Textview_Oswald_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_border_text_editprofile"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:text="CONNECT ACCOUNT "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/connect_facebook_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_bottom_border"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/facebook_icon" />
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/ic_arrow_right_large"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Facebook"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/connect_twitter_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/twitter_icon" />
+
+                    <com.example.mtalh.hijinnks.Custome_Textview_Varela_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/ic_arrow_right_large"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Twitter"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

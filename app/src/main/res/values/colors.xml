@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="login_signup_tab_blue">#293b7f</color>
+    <color name="login_signup_unselect">#968d88</color>
+    <color name="light_grey">#e0e0e0</color>
+    <color name="dark_grey">#919191</color>
+    <color name="hint_grey">#b2b2b2</color>
+    <color name="login_button_blue">#1f4ba5</color>
+    <color name="fb_login">#3c5a99</color>
+    <color name="twitter_login">#00b6f1</color>
+    <color name="menu_balck">#232323</color>
+    <color name="camera_blue_bg">#1f4ba5</color>
+<color name="app_color_blue">#1f4ba4</color>
+</resources>
